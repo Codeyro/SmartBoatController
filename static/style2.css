@@ -1,308 +1,58 @@
 /* Тело сайта */
 body{
     font-family: "Hero";
-    background-color: #faf2f2;
+    background-color: white;
     margin: 0px;
 }
 
-/* панель навигации */
-/* Задаём фоновый цвет для панели навигации */
-.topnav {
-    background-color: #383;
+/* Панель навигации */
+.nav {
+    background-color: #f9f9fa;
     overflow: hidden;
+    display: fex;
+    flex-wrap: wrap;
 }
 
-/* Задаём стиль ссылок в панели навигации */
-.topnav a {
+.tabs {
+    display: flex;
+    justify-content: center;
+}
+
+.tabs a {
     float: left;
-    color: #f2f2f2;
+    color: #555;
     text-align: center;
-    padding: 12px 15px;
+    padding: 12px 12px;
     text-decoration: none;
     position: relative;
-    font-size: 17px;
+    font-size: 18px;
     box-sizing: border-box;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: 0.2s; /* Время перехода */
 }
 
-.topnav a:before {
-    content:'';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 0;
-	background: rgba(255,255,255,0.2);
-	transition: all 0.2s ease;
+.tabs a:hover {
+    background-color: #fdfdfd
 }
 
-/* Задаём цвет наведённых ссылок */
-.topnav a:hover:before  {
-    height: 44px;
-}
-
-/* Задаём цвет выбранных ссылок */
-.topnav a.active {
-    background-color: #faf2f2;
+.tabs a.active {
+    background-color: white;
     color: black;
 }
 
-.topnav h4 {
+.nav h1 {
     float: left;
-    color: #faf2f2;
+    color: #000;
     text-align: center;
-    padding: 10px 15px;
+    padding: 12px 12px;
     margin: 0px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 18px;
 }
 
-.topnav img.logo {
-    float: left;
-    padding: 5px 5px;
-    max-height: 34px;
-    max-weight: 34px;
-    margin: 0px;
-    position: ;
-}
-
-.topnav img.account {
-    padding: 0px 0px;
-    max-height: 37px;
-    max-weight: 37px;
-    margin: 0px;
-    bottom: 10px;
-}
-
-.topnav input {
-    min-height: 32px;
-    background: rgba(255,255,255,0.2);
-    padding: 0px 0px;
-    margin-top: 6px;
-    margin-left: 6px;
-    box-sizing: border-box;
-    float: left;
-    position: relative;
-    border: 0px;
-    color: black;
-    outline: none;
-    padding: 0.5rem 0.5rem;
-    font-family: "Hero";
-}
-
-.topnav input:hover {
-    background-color: #faf2f2;
-}
-
-.topnav input:focus {
-    background-color: #faf2f2;
-}
-
-input[type="search"]::-webkit-search-cancel-button { /* псевдо что-то, что отвечает за кнопку очистки */
-	-webkit-appearance: none; /* без сброса оформление не применится */
-	width: 18px; /* размеры кастомного крестика */
-	height: 18px;
-    background: black;
-    -webkit-mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23777'><path d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'/></svg>");
-    background-size: 20px 20px;
-}
-
-
-
-.topnav button:hover {
-    background-color: #faf2f2;
-    color: black;
-}
-
-.topnav button {
-    min-height: 32px;
-    color: #faf2f2;
-    background: rgba(255,255,255,0.2);
-    padding: 0.5rem 0.5rem;
-    margin-top: 6px;
-    margin-right: 6px;
-    box-sizing: border-box;
-    float: left;
-    position: relative;
-    border: 0px;
-}
 
 /* Основной раздел */
 .main {
     background-color: white;
-    margin-left: 150px;
-    margin-right: 150px;
-    border-radius: 20px;
-}
-
-.main h2 {
-    text-align: center;
-    font-size: 40px;
-    padding: 10px 10px;
-    text-decoration: bold;
-    background-color: silver;
-}
-
-/* Правое меню */
-.rightMenu {
-    position: relative;
-    float: right;
-    background-color: white;
-    margin: 50px;
-    border-radius: 20px;
-}
-/* Подвал */
-.footer {
-    background-color: #383;
-    overflow: hidden;
-    float: bottom;
-}
-
-.footer h6 {
-    margin: 8px;
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 0px 0px;
-    text-decoration: none;
-    font-size: 16px;
-}
-
-.footer a {
-    margin: 6px;
-    float: left;
-    color: #faf2f2;
-    text-align: center;
-    text-decoration: none;
-    font-size: 14px;
-}
-
-.footer a:hover {
-	background: rgba(255,255,255,0.2);
-}
-
-.footer h5 {
-    float: right;
-    color: silver;
-    text-align: center;
-    text-decoration: none;
-    font-size: 14px;
-    margin: 14px;
-    padding: 0px 0px;
-}
-
-
-/* Стили всплывающего окна по-умолчанию */
-.modal {
-    position: fixed; /* фиксированное положение */
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(0,0,0,0.5); /* фон */
-    z-index: 1050;
-    opacity: 0; /* по умолчанию модальное окно прозрачно */
-    -webkit-transition: opacity 200ms ease-in;
-    -moz-transition: opacity 200ms ease-in;
-    transition: opacity 200ms ease-in; /* анимация перехода */
-    pointer-events: none; /* элемент невидим для событий мыши */
-    margin: 0;
-    padding: 0;
-}
-/* При отображении модального окно */
-.modal:target {
-    opacity: 1; /* делаем окно видимым */
-	pointer-events: auto; /* элемент видим для событий мыши */
-    overflow-y: auto; /* добавляем прокрутку по y, когда элемент не помещается на страницу */
-}
-/* ширина модального окна и его отступы от экрана */
-.modal-dialog {
-    position: relative;
-    width: auto;
-    margin: 10px;
-}
-@media (min-width: 576px) {
-  .modal-dialog {
-      max-width: 500px;
-      margin: 30px auto; /* отображение окна по центру */
-  }
-}
-/* Стили для блока с контентом окна */
-.modal-content {
-    position: relative;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    background-color: #fff;
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box;
-    border: none;
-    border-radius: 10px;
-    outline: 0;
-}
-@media (min-width: 768px) {
-  .modal-content {
-      -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
-      box-shadow: 0 5px 15px rgba(0,0,0,.5);
-  }
-}
-/* Стили заголовка окна */
-.modal-header {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    padding: 15px;
-    border-bottom: 1px solid #eceeef;
-}
-.modal-title {
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 1.5;
-    font-size: 1.25rem;
-    font-weight: 500;
-}
-/* Стили кнопки "х" ("Закрыть")  */
-.close {
-    float: right;
-    font-family: sans-serif;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 1;
-    color: #000;
-    text-shadow: 0 1px 0 #fff;
-    opacity: .5;
-    text-decoration: none;
-}
-/* Стили для закрывающей кнопки в фокусе или наведении */
-.close:focus, .close:hover {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-    opacity: .75;
-}
-
-/* Стили блока основного содержимого окна */
-.dialog-open {
-    position: relative;
-    -webkit-box-flex: 1;
-    -webkit-flex: 1 1 auto;
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
-    padding: 15px;
-    overflow: auto;
-    border-radius: 10px;
 }
