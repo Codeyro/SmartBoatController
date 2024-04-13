@@ -12,7 +12,6 @@ body{
     display: fex;
     flex-wrap: nowrap;
     justify-content: space-between;
-    align-items: flex-end;
 }
 
 .tabs {
