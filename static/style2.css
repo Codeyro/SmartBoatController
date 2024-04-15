@@ -68,6 +68,15 @@ body{
     font-size: 18px;
 }
 
+.nav img.logo {
+    float: left;
+    padding: 5px 5px;
+    max-height: 34px;
+    max-weight: 34px;
+    margin: 0px;
+    position: ;
+}
+
 
 /* Основной раздел */
 .main {
