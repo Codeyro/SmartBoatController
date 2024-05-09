@@ -1,17 +1,30 @@
+/* Переменные */
+:root {
+  --navHeight: 40;
+}
+
 /* Тело сайта */
-body{
+body {
     font-family: "Hero";
-    background-color: white;
+    background-color: #ffffff;
     margin: 0px;
 }
+
+body::-webkit-scrollbar {
+    width: 0px;
+}
+
 
 /* Панель навигации */
 nav {
     width: 100%;
-    background-color: #f5f9fa;
+    background-color: #f4f8f9;
     overflow: auto;
     position: fixed;
     top: 0;
+    display: flex;
+    justify-content: space-between;
+
 }
 
 nav ul {
@@ -19,7 +32,8 @@ nav ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    margin-top: 5px
+    margin-top: 5px;
+    height: 45px;
 }
 
 nav li {
@@ -34,7 +48,7 @@ nav li:last-child {
 
 nav ul a {
     display: block;
-    color: #666;
+    color: #717171;
     text-align: center;
     padding: 15px;
     font-size: 18px;
@@ -46,7 +60,7 @@ nav ul a {
 }
 
 nav ul a:hover {
-    background-color: #fdfdfd
+    background-color: #eff3f3
 }
 
 nav ul a.active {
@@ -56,22 +70,32 @@ nav ul a.active {
 
 nav h1 {
     float: left;
-    color: #000;
+    color: #2b2b2b;
     text-align: center;
-    padding: 15px;
-    padding-top: 20;
-    margin: 0px;
+    margin: 5px;
+    margin-left: 0px;
+    text-align: center;
     text-decoration: none;
     font-size: 18px;
+    height: 40px;
+    line-height: 40px;
 }
 
 nav img.logo {
     float: left;
-    padding: 5px 5px;
-    max-height: 34px;
-    max-weight: 34px;
-    margin: 0px;
-    position: ;
+    height: 40px;
+    weight: 40px;
+    margin: 5px;
+}
+
+nav button {
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    background-color: #ffffff;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 @media screen and (max-width: 500px) {
