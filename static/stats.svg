@@ -48,7 +48,7 @@
        rx="9.5"
        ry="9.5" />
     <path
-       style="fill:none;stroke:#999999;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;stroke-dasharray:none"
+       style="fill:none;stroke:#999999;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;stroke-dasharray:none"
        d="M 2.5,66.130434 C 38.934781,41.086955 38.73913,41.282609 38.73913,41.282609 L 54.782608,65.543477 86.47826,21.326087"
        id="path3" />
   </g>

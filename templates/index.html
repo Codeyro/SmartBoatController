@@ -8,14 +8,13 @@
 <body>
 <div class="wrapper fadeInDown">
     <div id="formContent">
-        <!-- Tabs Titles -->
         <h2 class="active">Вход</h2>
-        <h2 class="inactive underlineHover">Регистрация</h2>
         <form>
-            <input type="text" id="login" class="fadeIn" name="login" placeholder="Email">
-            <input type="password" id="password" class="fadeIn" name="login" placeholder="Пароль">
+            <input type="text" id="username" class="fadeIn" name="username" placeholder="Email или имя пользователя">
+            <input type="password" id="password" class="fadeIn" name="password" placeholder="Пароль">
             <a class="underlineHover" href="#">Забыли пароль?</a>
             <input type="submit" class="fadeIn" value="Войти">
+            <h2>{{ error }}</h2>
         </form>
     </div>
 </div>

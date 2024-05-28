@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="10mm"
+   height="10mm"
+   viewBox="0 0 10 10"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="dropdown.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#111111"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="10.818518"
+     inkscape:cx="18.255734"
+     inkscape:cy="24.818555"
+     inkscape:window-width="1680"
+     inkscape:window-height="997"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect1"
+       is_visible="true"
+       lpeversion="1"
+       nodesatellites_param="F,0,1,1,0,0.6,0,1 @ F,0,1,1,0,0.6,0,1 @ F,0,0,1,0,0.6,0,1"
+       radius="0"
+       unit="px"
+       method="auto"
+       mode="F"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+  </defs>
+  <g
+     inkscape:label="Слой 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="path1"
+       style="fill:#000000;stroke-width:0.32495;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:15;paint-order:stroke fill markers;fill-opacity:1"
+       inkscape:transform-center-y="1.6686563"
+       transform="matrix(3.0773922,0,0,3.0773922,2.4410816,-3.5113423)"
+       d="M 0.5315218,4.0460465 -0.74682039,1.8318929 A 0.34641016,0.34641016 120 0 1 -0.4468204,1.3122777 l 2.5566842,-1e-7 a 0.34641017,0.34641017 59.999998 0 1 0.3,0.5196153 l -1.278342,2.2141535 a 0.34641015,0.34641015 180 0 1 -0.6,1e-7 z"
+       inkscape:path-effect="#path-effect1"
+       inkscape:original-d="m 0.83152181,4.5656617 -1.87834221,-3.253384 3.7566842,-1e-7 z" />
+  </g>
+</svg>
