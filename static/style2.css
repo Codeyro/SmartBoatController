@@ -122,6 +122,53 @@ nav button {
 
 
 
+.tabs {
+  width: 800px;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav a {
+  flex-grow: 1;
+  text-align: center;
+  color: #353535;
+  text-decoration: none;
+  padding: 8px;
+  border: 1px solid transparent;
+  margin-bottom: -3px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+nav a.active {
+  border-color: #b1b1b1;
+  border-bottom-color: #ffffff;
+  position: relative;
+  background: #ffffff;
+  color: #000000;
+}
+nav a.active:before, nav a.active:after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: -8px;
+  width: 8px;
+  height: 8px;
+  background: green;
+  background-image: radial-gradient(circle at 0 0, #d5dfea 0 5px, #b0b0b0 0 8px, #e6e6e6 0);
+}
+nav a.active:after {
+  left: auto;
+  right: -8px;
+  background-image: radial-gradient(circle at 8px 0, #d5dfea 0 5px, #b02627 0 8px, #e6e6e6 0);
+}
+
+
+
+
+
+
 
 
 
